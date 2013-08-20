@@ -1,0 +1,71 @@
+application: diamond-arts
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /css
+  static_dir: css
+
+- url: /fonts
+  static_dir: fonts
+
+- url: /img
+  static_dir: img
+
+- url: /js
+  static_dir: js
+
+- url: /less
+  static_dir: less
+
+- url: /google7e5203e7d8a61dcf\.html
+  static_files: google7e5203e7d8a61dcf.html
+  upload: google7e5203e7d8a61dcf
+  
+- url: /blog\.html
+  static_files: blog.html
+  upload: blog\.html
+  
+
+- url: /contact\.html
+  static_files: contact.html
+  upload: contact\.html
+
+- url: /page\.html
+  static_files: page.html
+  upload: page\.html
+
+- url: /page-elements\.html
+  static_files: page-elements.html
+  upload: page-elements\.html
+  
+- url: /page-typography\.html
+  static_files: page-typography.html
+  upload: page-typography\.html
+  
+- url: /portfolio\.html
+  static_files: portfolio.html
+  upload: portfolio\.html
+  
+- url: /project\.html
+  static_files: project.html
+  upload: project\.html
+  
+- url: /single\.html
+  static_files: single.html
+  upload: single\.html
+
+- url: .*
+  static_files: index.html
+  upload: index\.html
+  
+
+libraries:
+- name: webapp2
+  version: "2.5.2"
